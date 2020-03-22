@@ -2,7 +2,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial BTSerial(2, 10); // RX | TX (11 direct 10 R)
 
-long BTBAUD = 57600 ; //4:9600 5:19200, 6:38400, 7:57600
+long BTBAUD = 57600 ; //4:9600 5:19200, 6:38400, 7:57600, 8: 115200 (not stable)
 char readBuffer[128];
 int readPos = 0;
 byte termFound = 0;
